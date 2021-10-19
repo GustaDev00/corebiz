@@ -1,0 +1,59 @@
+main{
+    margin: 0 $aut-margin 100px $aut-margin;
+
+    div.Category{
+        font-family: $arial;
+        font-size: 1.2rem;
+
+        div.bar{
+            @extend %bar;
+            background: $gray;
+        }
+    }
+    div.Products{
+        @extend %basicFlex;
+        overflow: hidden;
+
+        div.CardProduct{
+            margin: 0 150px 0 0;
+
+            div.CardImg{
+                img{
+                    width: fit-content;
+                }
+            }
+
+            div.AboutCardProduct{
+                text-align: center;
+                margin: 10px 0;
+                h2{
+                    font-size: 14px;
+                    color: $gray;
+                    font-weight: 400;
+                }
+            }
+
+            div.PriceProduct{
+                h3{
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin: 10px 0;
+                }
+                p{
+                    font-size: 12px;
+                    color: $gray;
+                }
+                button{
+                    padding: 5px 20px;
+                    color: $white;
+                    background: $black;
+                    border: none;
+                    border-radius: 5px;
+                    margin: 10px 0;
+                }
+            }
+
+        }
+    }
+
+}

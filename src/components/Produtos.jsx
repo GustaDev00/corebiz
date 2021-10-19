@@ -19,17 +19,20 @@ export default class Api extends React.Component {
   render() {
     const settings = {
       dots: true,
-      lazyLoad: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToShow: 3,
+      slidesToScroll: 2
     };
-
 
     return (
       <main>
-        {/* <Slider {...settings}> */}
+        <div className="Category">
+          <h2>Mais Vendidos</h2>
+          <div className="bar"></div>
+        </div>
+        <div className="Products">
+        {/* <Slider {...settings}>  */}
         {this.state.produtos.map(product =>
           <div className="CardProduct">
             <div className="CardImg">
@@ -49,11 +52,10 @@ export default class Api extends React.Component {
                 <button>COMPRAR</button>
               </div>
             </div>
-
-            <li></li>
           </div>
         )}
         {/* </Slider> */}
+        </div>
       </main>
     )
   }

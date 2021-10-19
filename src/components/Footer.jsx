@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="AboutCorebiz">
                 <article>
                     <h3>Localização</h3>
-                    <span></span>
+                    <div className="bar"></div>
                 </article>
                 <ul>
                     <li>Avenida Andrômeda, 2000. Bloco 6 e 8 </li>
@@ -22,11 +22,11 @@ const Footer = () => {
             <div className="BtnInfo">
                 <a href="http://localhost:3000/">
                     <img src={IconChat} alt="Icone de Mensagem" />
-                    <p>ENTRE EM CONTATO</p>
+                    ENTRE EM CONTATO
                 </a>
                 <a href="http://localhost:3000/">
                     <img src={IconFone} alt="Icone de HeadPhone" />
-                    <p>FALE COM O NOSSO CONSULTOR ONLINE</p>
+                    FALE COM O NOSSO CONSULTOR ONLINE
                 </a>
             </div>
             <div>

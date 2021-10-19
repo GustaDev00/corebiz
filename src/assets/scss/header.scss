@@ -1,14 +1,14 @@
 header {
-    display: flex;
-    align-items: center;
+    @extend %basicFlex;
+    width: 76%;
     justify-content: space-between;
-    margin: 10px 17%;
+    margin: 10px $aut-margin;
 
     div.SearchBar {
         input {
-            width: 40vw;
+            width: 35vw;
             border: none;
-            border-bottom: 1px solid #7A7A7A;
+            border-bottom: 1px solid $gray;
             background: none;
             height: 23px;
             padding-left: 10px;
@@ -25,9 +25,8 @@ header {
 
     div.ColUser {
         a {
-            color: #7A7A7A;
-            display: flex;
-            align-items: center;
+            @extend %basicFlex;
+            color: $gray;
             text-decoration: none;
 
             img{

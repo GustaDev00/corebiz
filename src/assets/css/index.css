@@ -1,11 +1,21 @@
-header {
+footer, main div.Products, header div.ColUser a, header {
   display: flex;
   align-items: center;
+}
+
+footer div.AboutCorebiz article div.bar, main div.Category div.bar {
+  width: 30px;
+  margin: 10px 0;
+  height: 4px;
+}
+
+header {
+  width: 76%;
   justify-content: space-between;
-  margin: 10px 17%;
+  margin: 10px 12%;
 }
 header div.SearchBar input {
-  width: 40vw;
+  width: 35vw;
   border: none;
   border-bottom: 1px solid #7A7A7A;
   background: none;
@@ -21,8 +31,6 @@ header div.SearchBar button.BtnGlass {
 }
 header div.ColUser a {
   color: #7A7A7A;
-  display: flex;
-  align-items: center;
   text-decoration: none;
 }
 header div.ColUser a img {
@@ -33,6 +41,142 @@ header div.ColUser a:hover {
 }
 header div.Cart {
   cursor: pointer;
+}
+
+.BannersSlick {
+  width: 100%;
+  margin: auto;
+}
+.BannersSlick .slick-list img {
+  width: 100%;
+}
+.BannersSlick .slick-list figcaption {
+  color: #fff;
+  position: relative;
+  bottom: 300px;
+  left: 12%;
+  width: 400px;
+}
+.BannersSlick .slick-list figcaption h3 {
+  font-size: 2.8em;
+}
+.BannersSlick .slick-list figcaption h4 {
+  font-size: 1.8rem;
+}
+
+main {
+  margin: 0 12% 100px 12%;
+}
+main div.Category {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+main div.Category div.bar {
+  background: #7A7A7A;
+}
+main div.Products {
+  overflow: hidden;
+}
+main div.Products div.CardProduct {
+  margin: 0 150px 0 0;
+}
+main div.Products div.CardProduct div.CardImg img {
+  width: fit-content;
+}
+main div.Products div.CardProduct div.AboutCardProduct {
+  text-align: center;
+  margin: 10px 0;
+}
+main div.Products div.CardProduct div.AboutCardProduct h2 {
+  font-size: 14px;
+  color: #7A7A7A;
+  font-weight: 400;
+}
+main div.Products div.CardProduct div.PriceProduct h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+main div.Products div.CardProduct div.PriceProduct p {
+  font-size: 12px;
+  color: #7A7A7A;
+}
+main div.Products div.CardProduct div.PriceProduct button {
+  padding: 5px 20px;
+  color: #fff;
+  background: #000;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+div.newsletter {
+  background: #F2F2F2;
+  padding: 20px 12%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+div.newsletter h2 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div.newsletter div.FormNewsletter {
+  margin: 20px 0;
+}
+div.newsletter div.FormNewsletter input {
+  margin: 0 10px;
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+}
+div.newsletter div.FormNewsletter input:last-child {
+  background: #000;
+  color: #fff;
+  width: fit-content;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+footer {
+  background: #000;
+  padding: 20px 12%;
+  justify-content: space-between;
+}
+footer div.AboutCorebiz {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer div.AboutCorebiz article {
+  margin: 20px 0;
+}
+footer div.AboutCorebiz article div.bar {
+  background: #fff;
+}
+footer div.AboutCorebiz ul {
+  list-style: none;
+}
+footer div.AboutCorebiz ul li {
+  margin: 10px 0;
+  font-size: 12px;
+}
+footer div.BtnInfo {
+  display: flex;
+  flex-direction: column;
+}
+footer div.BtnInfo a {
+  display: flex;
+  width: 200px;
+  background: #fff;
+  padding: 8px 25px;
+  margin: 20px 0;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+footer div.BtnInfo a img {
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,4 +1,22 @@
+%basicFlex{
+    display: flex;
+    align-items: center;
+}
+
+%bar{
+    width: 30px;
+    margin: 10px 0;
+    height: 4px;
+}
 
 @import 'variables';
 
 @import 'header';
+
+@import 'SimpleSlider';
+
+@import 'produtos';
+
+@import 'news';
+
+@import 'footer'

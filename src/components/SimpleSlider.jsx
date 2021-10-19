@@ -15,15 +15,15 @@ export default class SimpleSlider extends React.Component {
       slidesToScroll: 1
     };
     return (
-      <div>
+      <div className="BannersSlick">
         <Slider {...settings}>
-          <div>
+          <figure>
             <img src={Banner} alt="Banners" />
-            <article>
+            <figcaption>
             <h4>Olá, o que você está buscando?</h4>
             <h3>Criar ou migrar seu e-commerce?</h3>
-            </article>
-          </div>
+            </figcaption>
+          </figure>
         </Slider>
       </div>
     );
