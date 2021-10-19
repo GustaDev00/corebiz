@@ -1,6 +1,38 @@
-body {
-  background-color: #444;
-  color: #fff;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 17%;
+}
+header div.SearchBar input {
+  width: 40vw;
+  border: none;
+  border-bottom: 1px solid #7A7A7A;
+  background: none;
+  height: 23px;
+  padding-left: 10px;
+}
+header div.SearchBar button.BtnGlass {
+  background: none;
+  border: none;
+  position: relative;
+  right: 20px;
+  top: 5px;
+}
+header div.ColUser a {
+  color: #7A7A7A;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+header div.ColUser a img {
+  margin-right: 5px;
+}
+header div.ColUser a:hover {
+  color: red;
+}
+header div.Cart {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

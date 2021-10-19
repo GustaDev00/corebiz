@@ -1,5 +1,3 @@
-import React from 'react'
-
 // Import de imagens
 import LogoImg from '../assets/img/logo-corebiz.png'
 import IconCart from '../assets/img/icon/cart.svg'
@@ -9,11 +7,11 @@ import IconGlass from '../assets/img/icon/glass.svg'
 const Header = () => {
     return(
         <header>
-            <div className="logo-img">
+            <div className="LogoImg">
                 <img src={LogoImg} alt="Logo Corebiz" />
             </div> 
             <div className="SearchBar">
-                <input type="text" />
+                <input type="text" placeholder="O que está procurando?" />
                 <button className="BtnGlass">
                     <img src={IconGlass} alt="Icone de pesquisa" />
                 </button>

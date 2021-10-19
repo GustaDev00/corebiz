@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 17%;
+
+    div.SearchBar {
+        input {
+            width: 40vw;
+            border: none;
+            border-bottom: 1px solid #7A7A7A;
+            background: none;
+            height: 23px;
+            padding-left: 10px;
+        }
+
+        button.BtnGlass {
+            background: none;
+            border: none;
+            position: relative;
+            right: 20px;
+            top: 5px;
+        }
+    }
+
+    div.ColUser {
+        a {
+            color: #7A7A7A;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+
+            img{
+                margin-right: 5px;
+            }
+
+            &:hover{
+                color: red;
+            }
+        }
+    }
+
+    div.Cart{
+        cursor: pointer;
+    }
+}

@@ -1,34 +1,44 @@
-import React from 'react'
-
 // Import de imagens
-import LogoImg from '../assets/img/logo-corebiz.png'
-import IconCart from '../assets/img/icon/cart.svg'
-import IconUser from '../assets/img/icon/user.svg'
-import IconGlass from '../assets/img/icon/glass.svg'
+import IconChat from '../assets/img/icon/chat.svg'
+import IconFone from '../assets/img/icon/fone.svg'
+import ImgVtex from '../assets/img/vtex.svg'
+import ImgCore from '../assets/img/created.png'
 
-const Header = () => {
-    return(
-        <header>
-            <div className="logo-img">
-                <img src={LogoImg} alt="Logo Corebiz" />
-            </div> 
-            <div className="SearchBar">
-                <input type="text" />
-                <button className="BtnGlass">
-                    <img src={IconGlass} alt="Icone de pesquisa" />
-                </button>
+const Footer = () => {
+    return (
+        <footer>
+            <div className="AboutCorebiz">
+                <article>
+                    <h3>Localização</h3>
+                    <span></span>
+                </article>
+                <ul>
+                    <li>Avenida Andrômeda, 2000. Bloco 6 e 8 </li>
+                    <li>Alphavile SP</li>
+                    <li>brasil@corebiz.ag</li>
+                    <li>+55 11 3090 1039</li>
+                </ul>
             </div>
-            <div className="ColUser">
+            <div className="BtnInfo">
                 <a href="http://localhost:3000/">
-                    <img src={IconUser} alt="Icone de Usuario" />
-                    <span className="mobile">Minha Conta</span>
+                    <img src={IconChat} alt="Icone de Mensagem" />
+                    <p>ENTRE EM CONTATO</p>
+                </a>
+                <a href="http://localhost:3000/">
+                    <img src={IconFone} alt="Icone de HeadPhone" />
+                    <p>FALE COM O NOSSO CONSULTOR ONLINE</p>
                 </a>
             </div>
-            <div className="Cart">
-                <img src={IconCart} alt="Icone de Carrinho de compra" />
+            <div>
+                <a href="http://localhost:3000/">
+                    <img src={ImgCore} alt="Imagem da CoreBiz" />
+                </a>
+                <a href="http://localhost:3000/">
+                    <img src={ImgVtex} alt="Imagem da Vtex" />
+                </a>
             </div>
-        </header>
+        </footer>
     )
 }
 
-export default Header
+export default Footer
