@@ -39,6 +39,10 @@ main {
             div.about-card-product {
                 text-align: center;
                 margin: 10px 0;
+                height: 180px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
 
                 h2 {
                     @extend %nunito600;
@@ -56,6 +60,7 @@ main {
             }
 
             div.price-product {
+
                 h3 {
                     @extend %nunito700;
                     text-align: center
@@ -68,6 +73,7 @@ main {
                 button {
                     padding: 10px 25px;
                     color: $white;
+                    width: 150px;
                     background: $black;
                     border: none;
                     border-radius: 5px;

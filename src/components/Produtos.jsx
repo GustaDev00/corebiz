@@ -106,13 +106,13 @@ const Api = ({ setCart }) => {
                 </div>
 
                 <div className="price-product">
-                  {product.listPrice && (
-                    <p>de <s>R$ {ConverterPreco(product.listPrice)}</s></p>
-                  )}
-                  <h3>por R$ {ConverterPreco(product.price)}</h3>
-                  {product.installments.length > 0 && (
-                    <p>ou em {product.installments[0].quantity}x de R$ {ConverterPreco(product.installments[0].value)}</p>
-                  )}
+                    {product.listPrice && (
+                      <p>de <s>R$ {ConverterPreco(product.listPrice)}</s></p>
+                    )}
+                    <h3>por R$ {ConverterPreco(product.price)}</h3>
+                    {product.installments.length > 0 && (
+                      <p>ou em {product.installments[0].quantity}x de R$ {ConverterPreco(product.installments[0].value)}</p>
+                    )}
                   <button onClick={() => { handleAddToCart(product) }}>COMPRAR</button>
                 </div>
               </div>
