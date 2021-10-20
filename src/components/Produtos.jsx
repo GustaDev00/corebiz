@@ -3,6 +3,8 @@ import axios from "axios"
 import Slider from "react-slick";
 
 import Flag from '../assets/img/icon/flag.svg'
+import IconStarEmpty from '../assets/img/icon/star-empty.svg'
+import IconStar from '../assets/img/icon/star.svg'
 
 
 const Api = ({ setCart }) => {
@@ -26,6 +28,14 @@ const Api = ({ setCart }) => {
       tmp = tmp.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1,$2");
 
     return tmp;
+  }
+
+  const star = (qtd) => {
+    var line = [];
+    for (var i = 0; i < 5; i++) {
+      line.push(i < qtd ? <img src={IconStar} alt="Estrela cheia" /> : <img src={IconStarEmpty} alt="Estrela vazia" />);
+    }
+    return line;
   }
 
 
@@ -91,14 +101,17 @@ const Api = ({ setCart }) => {
                 <div className="card-name">
                   <h2>{product.productName}</h2>
                   <div className="avaliacao">
-                    <span>{product.stars}</span>
+                    {star(product.stars)}
                   </div>
                 </div>
 
                 <div className="price-product">
+                  {product.listPrice && (
+                    <p>de <s>R$ {ConverterPreco(product.listPrice)}</s></p>
+                  )}
                   <h3>por R$ {ConverterPreco(product.price)}</h3>
                   {product.installments.length > 0 && (
-                    <p>ou em {product.installments[0].quantity} de R$ {ConverterPreco(product.installments[0].value)}</p>
+                    <p>ou em {product.installments[0].quantity}x de R$ {ConverterPreco(product.installments[0].value)}</p>
                   )}
                   <button onClick={() => { handleAddToCart(product) }}>COMPRAR</button>
                 </div>

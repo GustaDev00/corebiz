@@ -43,6 +43,16 @@ main {
                 h2 {
                     @extend %nunito600;
                 }
+
+                div.avaliacao{
+                    display: flex;
+                    justify-content: center;
+                    margin: 5px 0;
+
+                    img{
+                        margin: 0 5px;
+                    }
+                }
             }
 
             div.price-product {
