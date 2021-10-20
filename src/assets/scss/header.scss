@@ -24,6 +24,9 @@ header {
     }
 
     div.ColUser {
+        .menu-mobile{
+            display: none;
+        }
         a {
             @extend %basicFlex;
             color: $gray;

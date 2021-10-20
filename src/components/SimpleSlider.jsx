@@ -4,15 +4,15 @@ import Slider from "react-slick";
 //Imagens
 import Banner from '../assets/img/banner.png'
 
-export default class SimpleSlider extends React.Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: false,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
+const SimpleSlider = () => {
+
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
 
     return (
       <div className="banners-slick">
@@ -49,4 +49,5 @@ export default class SimpleSlider extends React.Component {
       </div>
     );
   }
-}
+
+export default SimpleSlider
