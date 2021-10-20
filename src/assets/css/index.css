@@ -1,4 +1,4 @@
-footer, main div.Products, header div.ColUser a, header {
+footer, header div.ColUser a, header {
   display: flex;
   align-items: center;
 }
@@ -73,9 +73,6 @@ main div.Category {
 }
 main div.Category div.bar {
   background: #7A7A7A;
-}
-main div.Products {
-  overflow: hidden;
 }
 main div.Products div.CardProduct {
   margin: 0 150px 0 0;

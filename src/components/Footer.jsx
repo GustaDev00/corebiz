@@ -7,7 +7,7 @@ import ImgCore from '../assets/img/created.png'
 const Footer = () => {
     return (
         <footer>
-            <div className="AboutCorebiz">
+            <div className="about-corebiz">
                 <article>
                     <h3>Localização</h3>
                     <div className="bar"></div>
@@ -19,7 +19,7 @@ const Footer = () => {
                     <li>+55 11 3090 1039</li>
                 </ul>
             </div>
-            <div className="BtnInfo">
+            <div className="btn-info">
                 <a href="http://localhost:3000/">
                     <img src={IconChat} alt="Icone de Mensagem" />
                     ENTRE EM CONTATO
@@ -29,7 +29,7 @@ const Footer = () => {
                     FALE COM O NOSSO CONSULTOR ONLINE
                 </a>
             </div>
-            <div>
+            <div className="criadores">
                 <a href="http://localhost:3000/">
                     <img src={ImgCore} alt="Imagem da CoreBiz" />
                 </a>

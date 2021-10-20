@@ -4,9 +4,9 @@ footer{
     padding: 20px $aut-margin;
     justify-content: space-between;
 
-    div.AboutCorebiz{
+    div.about-corebiz{
         color: $white;
-        font-family: $arial;
+        font-family: $nunito;
 
         article{
             margin: 20px 0;
@@ -20,12 +20,13 @@ footer{
             list-style: none;
             li{
                 margin: 10px 0;
-                font-size: 12px;
+                @extend %nunito400;
+                text-align: left;
             }
         }
     }
 
-    div.BtnInfo{
+    div.btn-info{
         display: flex;
         flex-direction: column;
 
@@ -38,10 +39,28 @@ footer{
             color: $black;
             text-decoration: none;
             border-radius: 5px;
+            @extend %nunito600;
+            text-align: left;
 
             img{
                 margin-right: 15px;
             }
         }
+    }
+
+    div.criadores{
+        display: flex;
+        align-items: flex-start;
+
+        a{
+            margin: 0 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer{
+        flex-direction: column;
+        padding: 20px 5%;
     }
 }

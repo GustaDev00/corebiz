@@ -8,20 +8,41 @@ export default class SimpleSlider extends React.Component {
   render() {
     const settings = {
       dots: true,
-      lazyLoad: true,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1
     };
+
     return (
-      <div className="BannersSlick">
+      <div className="banners-slick">
         <Slider {...settings}>
           <figure>
             <img src={Banner} alt="Banners" />
             <figcaption>
-            <h4>Olá, o que você está buscando?</h4>
-            <h3>Criar ou migrar seu e-commerce?</h3>
+              <h4>Olá, o que você está buscando?</h4>
+              <h3>Criar ou migrar seu e-commerce?</h3>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src={Banner} alt="Banners" />
+            <figcaption>
+              <h4>Olá, o que você está buscando?</h4>
+              <h3>Criar ou migrar seu e-commerce?</h3>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src={Banner} alt="Banners" />
+            <figcaption>
+              <h4>Olá, o que você está buscando?</h4>
+              <h3>Criar ou migrar seu e-commerce?</h3>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src={Banner} alt="Banners" />
+            <figcaption>
+              <h4>Olá, o que você está buscando?</h4>
+              <h3>Criar ou migrar seu e-commerce?</h3>
             </figcaption>
           </figure>
         </Slider>
